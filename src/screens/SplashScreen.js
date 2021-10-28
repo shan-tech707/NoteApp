@@ -12,7 +12,10 @@ export default function SplashScreen({navigation}) {
 
     return (
       <View style={styles.container}>
-        <Text>NoteApp Using Redux</Text>
+        <Image
+          style={styles.logo}
+          source={require('../pic/notesplash2.png')}
+        />
         <ActivityIndicator style={styles.loader} size="large" color="black" />
       </View>
     );
@@ -26,8 +29,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   logo: {
-    height: 150.15,
-    width: 200,
+    height: 300,
+    width: 400,
     marginBottom: 30,
   },
   loader: {
